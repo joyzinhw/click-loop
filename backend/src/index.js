@@ -12,6 +12,8 @@ async function main() {
     const port = 3000
 
     const app = express()
+
+    
 // conecao
 
     const mongoConnection = await Mongo.connect({ mongoConnectionString: process.env.MONGO_CS, mongoDbName: process.env.MONGO_DB_NAME})
