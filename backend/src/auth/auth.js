@@ -6,6 +6,8 @@ import jwt from 'jsonwebtoken'
 import { Mongo } from "../database/mongo.js"
 import { ObjectId } from 'mongodb'
 
+
+//novas anotacoes
 const collectionName = 'users'
 
 const authRouter = express.Router()
