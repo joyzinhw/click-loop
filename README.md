@@ -1,8 +1,8 @@
 # Sistema de loja
 
-Sistema de vendas, para usaurios, e para vendedores.
+Sistema de vendas, para usuarios, e para vendedores.
 
-### Tecnologias
+## Tecnologias
 
 * React.Js
 * Node.Js
