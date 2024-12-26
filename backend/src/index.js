@@ -4,7 +4,7 @@ import { Mongo } from './database/mongo.js'
 import { config } from 'dotenv' 
 import authRouter from './auth/auth.js'
 
-
+//teste
 config()
 
 async function main() {
@@ -13,7 +13,7 @@ async function main() {
 
     const app = express()
 
-    
+
 // conecao
 
     const mongoConnection = await Mongo.connect({ mongoConnectionString: process.env.MONGO_CS, mongoDbName: process.env.MONGO_DB_NAME})
