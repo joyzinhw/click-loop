@@ -38,6 +38,8 @@ passport.use(new LocalStrategy({ usernameField: 'email' }, async (email, passwor
     })
 }))
 
+//signup
+
 authRouter.post('/signup', async(req, res) => {
     const checkUser = await Mongo.db
     .collection(collectionName)
@@ -94,6 +96,8 @@ authRouter.post('/signup', async(req, res) => {
         }
     })
 })
+
+//login
 
 authRouter.post('/login', (req, res) => {
     passport.authenticate('local', (error, user) => {
