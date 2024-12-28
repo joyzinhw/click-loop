@@ -1,4 +1,4 @@
-import * as httpResponses from '../helpers/httpResponses.js';
+import { ok, serverError } from "../helpers/httpResponses.js"
 import UsersDataAccess from "../dataAccess/users.js"
 
 export default class UsersControllers {

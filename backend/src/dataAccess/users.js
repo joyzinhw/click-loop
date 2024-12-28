@@ -4,6 +4,8 @@ import crypto from 'crypto'
 
 const collectionName = 'users'
 
+//add user
+
 export default class UsersDataAccess {
     async getUsers() {
         const result = await Mongo.db
@@ -14,6 +16,8 @@ export default class UsersDataAccess {
         return result
     }
 
+
+    // deleter user
     async deleteUser (userId) {
         const result = await Mongo.db
         .collection(collectionName)
@@ -22,6 +26,8 @@ export default class UsersDataAccess {
         return result
     }
 
+
+    // up of user
     async updateUser(userId, userData) {
         if(userData.password) {
             const salt = crypto.randomBytes(16)
